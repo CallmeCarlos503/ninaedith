@@ -1,0 +1,129 @@
+html {
+  background-image: url("https://fondosmil.com/fondo/27489.png");
+}
+
+.column {
+  float: left;
+  width: 70%;
+}
+
+.column-2 {
+  float: left;
+  width: 30%;
+  background-color: aquamarine;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header-texto {
+  background-image: url("https://wallpaperaccess.com/full/3884437.jpg");
+  color: crimson;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 7%;
+  padding-top: 7%;
+}
+
+.boton-personalizado {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: #333333;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #ffd27d;
+  border-color: #d8d8d8;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 35px;
+  margin-left: 20%;
+}
+.boton-personalizado:hover{
+    background-color: black;
+    color: white;
+}
+
+.articulo-img {
+  margin-top: 15%;
+  margin-right: 10%;
+  width: 200px;
+  height: 180px;
+}
+
+.articulo-1-izquierdo {
+  text-align: left;
+  margin-left: 15%;
+  margin-right: 10%;
+}
+.foot {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Sistema de Carga en CSS*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+.contenedor_loader {
+  background-color: aliceblue;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  transition: all 1.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader,
+.loader::before,
+.loader::after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  animation: loader 1.5s infinite ease-in-out;
+}
+.loader {
+  color: blue;
+  font-size: 13px;
+  position: relative;
+  animation-delay: -0.16s;
+}
+.loader::before,
+loader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+}
+.loader::before {
+  left: -3.5em;
+  animation-delay: -0.32s;
+}
+.loader::after {
+  left: 3.5em;
+}
+@keyframes loader {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em;
+  }
+}
